@@ -1,0 +1,34 @@
+@ server=https://evc3-diaz.onrender.com
+@ api =https://evc3-diaz.onrender.com/api/ec3
+################ Categorias: ################
+###
+GET https://evc3-diaz.onrender.com/api/ec3/categorias
+###
+POST https://evc3-diaz.onrender.com/api/ec3/categorias
+Content-Type: application/json
+
+{"nombre": "Instrumentos de Cuerda"}
+
+
+################ Instrumentos: ################
+###
+GET https://evc3-diaz.onrender.com/api/ec3/instrumentos
+###
+POST https://evc3-diaz.onrender.com/api/ec3/instrumentos
+Content-Type: application/json
+
+{"nombre": "Guitarra", "categoria": "https://evc3-diaz.onrender.com/api/ec3/categorias/1"}
+
+###
+POST https://evc3-diaz.onrender.com/api/ec3/instrumentos
+Content-Type: application/json
+
+{"nombre": "Piano", "categoria": "https://evc3-diaz.onrender.com/api/ec3/categorias/1"}
+
+
+###
+GET https://evc3-diaz.onrender.com/api/ec3/instrumentos/1/categoria
+
+####
+
+GET https://evc3-diaz.onrender.com/api/ec3/instrumentos?sort=nombre,desc
